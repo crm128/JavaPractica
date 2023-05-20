@@ -1,4 +1,4 @@
-package ProblemasHackerRank.arrayPrecision;
+package ProblemasHackerRank.JAVA.arrayPrecision;
 //import java.text.DecimalFormat;
 public class arrayPrecision {
     public static void main(String[] args) {

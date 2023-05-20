@@ -1,4 +1,4 @@
-package ProblemasHackerRank.ConversionHora;
+package ProblemasHackerRank.JAVA.ConversionHora;
 
 public class Conversion {
     public static void main(String[] args) {

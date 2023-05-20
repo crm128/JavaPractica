@@ -1,4 +1,4 @@
-package ProblemasHackerRank.sumaMaxYMin;
+package ProblemasHackerRank.JAVA.sumaMaxYMin;
 public class sumaMaxYMin {
     public static void main(String[] args) {
         //List<String> arr = new LinkedList<String>();

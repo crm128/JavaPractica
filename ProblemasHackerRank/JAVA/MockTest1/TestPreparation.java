@@ -1,6 +1,6 @@
-package Problema22;
+package ProblemasHackerRank.JAVA.MockTest1;
 
-public class index {
+public class TestPreparation {
 
     public static void main(String[] args) {
         int n = 5;
