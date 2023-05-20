@@ -1,4 +1,4 @@
-package ProblemasHackerRank;
+package ProblemasHackerRank.arrayPrecision;
 //import java.text.DecimalFormat;
 public class arrayPrecision {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class arrayPrecision {
         arr[4]=-1; */
         //En el problema arr era una lista de int
         //por eso lo cambio a arreglo
-        
+        /* 
         int[] arreglo = new int[arr.size()];
  
         for (int i = 0; i < arr.size(); i++){
@@ -42,5 +42,6 @@ public class arrayPrecision {
         System.out.println("");
         System.out.printf("%,.6f",cRatio);
         System.out.println("");
+        */
     }
 }
