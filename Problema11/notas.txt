@@ -1,3 +1,0 @@
-En el problema se rompe con la salida, 
-si elijo S se ejecuta una vez mas y recien sale
-no tengo ganas de corregirlo ahora.
