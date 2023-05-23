@@ -8,15 +8,14 @@ public class Operaciones {
     public static int multiplicacion(int a,int b){
         return a*b;
     }
-    public static int division(int a,int b){
+    public static double division(int a,int b){
+        double c = a;
+        double d = b;
         if (b != 0) {
-            return a/b;
+            return (c/d);
         }else{
             return 0;
         }
         
-    }
-    public static boolean salir(){
-        return false;
     }
 }

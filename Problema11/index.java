@@ -26,8 +26,8 @@ del programa, caso contrario se vuelve a mostrar el menú. */
         boolean salir = true;
 
         while (salir) {
-            System.out.print("\033[H\033[2J");  
-            System.out.flush(); 
+            //System.out.print("\033[H\033[2J");  
+            //System.out.flush(); 
             System.out.println("Menu");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
@@ -38,24 +38,31 @@ del programa, caso contrario se vuelve a mostrar el menú. */
             int c = leer.nextInt();
             switch (c) {
                 case 1:
-                    Operaciones.suma(a, b);
+                    System.out.println("El resultado es: " + Operaciones.suma(a, b));
+                    leer.nextLine();
                     break;
                 case 2:
-                    Operaciones.resta(a, b);
+                    System.out.println("El resultado es: " + Operaciones.resta(a, b));
                     break;
                 case 3:
-                    Operaciones.multiplicacion(a, b);
+                    System.out.println("El resultado es: " + Operaciones.multiplicacion(a, b));
                     break;
                 case 4:
-                    Operaciones.division(a, b);
+                    System.out.println("El resultado es: " + Operaciones.division(a, b));
                     break;
                 case 5:
-                    salir = Operaciones.salir();
+                    System.out.println("Confirme que quiere salir S/N");
+                    leer.next();
+                    char confirmar = leer.next().charAt(0);
+                    if ( confirmar == 'S'){
+                        salir = false;
+                    }
                     break;
                 default:
-                    break;
+                    salir = false;
             }
+            System.out.println("");
         }
-        
+        leer.close();
     }
 }
