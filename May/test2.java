@@ -1,7 +1,7 @@
 /*Implementar un programa que le pida dos números enteros a usuario y determine si ambos o
 alguno de ellos es mayor a 25 */
 
-package May;
+//package May;
 
 import java.util.Scanner;
 public class test2 {

@@ -13,7 +13,7 @@ o Si no se cumple ninguno de los valores anteriores mostrar el mensaje “No exi
 válido para tipo de bomba” */
 
 
-package May;
+//package May;
 
 import java.util.Scanner;
 
