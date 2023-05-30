@@ -1,8 +1,8 @@
 package ProblemasExtra.Problema1;
 
 public class funcion {
-    public static int horas(int segundos){
-        int horas = segundos/3600;
+    public static int horas(int minutos){
+        int horas = minutos/60;
         return horas;
     }
     public static int dias(int horas){

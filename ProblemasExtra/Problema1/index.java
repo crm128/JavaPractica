@@ -10,9 +10,9 @@ public class index {
         Scanner leer = new Scanner(System.in);
 
         System.out.println("Ingrese la cantidad de segundos a convertir");
-        int segundos = leer.nextInt();
+        int minutos = leer.nextInt();
 
-        int horas = funcion.horas(segundos);
+        int horas = funcion.horas(minutos);
 
         if (horas > 24) {
             int dias = funcion.dias(horas);
