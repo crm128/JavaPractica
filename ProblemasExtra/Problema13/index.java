@@ -15,32 +15,15 @@ public class index {
         System.out.println("Ingrese un numero");
         int numero = leer.nextInt();
         
-        int contador;
-
-        while (conta) {
-            
+        int contador=1;
+        String texto="";
+        while (contador<numero+1) {
+            texto = texto.concat(String.valueOf(contador));
+            System.out.println(texto);
+            contador++;
         }
-        int[] vector = new int[5];
-        for (int i = 0; i < vector.length; i++) {
-            vector[i] = (int) (Math.random()*100);
-        }
+        
+        leer.close();
 
-        int suma=0;
-        for (int i : vector) {
-            System.out.print(i+" ");
-            suma = suma + i;
-        }
-
-        System.out.println("");
-        System.out.println(suma);
-
-        int suma2=0;
-        for (int i = 0; i < vector.length; i++) {
-            System.out.print(vector[i]+" ");
-            suma2 = suma2 + vector[i];
-        }
-
-        System.out.println("");
-        System.out.println(suma2);
     }
 }
