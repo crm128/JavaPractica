@@ -13,16 +13,16 @@ Nota: investigar función equals() y como convertir números a String. */
 public class index {
     public static void main(String[] args) {
         String text;
+        
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 for (int k = 0; k < 10; k++) {
                     text = String.valueOf(i+"-"+j+"-"+k);
-                    if (text.contains("3")) {
-                        System.out.println("hay");
-                    } else {
-                        System.out.println(text);
-                    }
                     
+                    text = text.replace('3', 'E');
+
+                    System.out.println(text);
+                                       
                     
                 }
             }

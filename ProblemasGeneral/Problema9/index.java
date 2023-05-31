@@ -9,7 +9,7 @@ public class index {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         String palabra = teclado.nextLine();
-        if (palabra.toLowerCase().substring(0, 1).equals("a")) {
+        if (palabra.toLowerCase().startsWith("a")) {
             System.out.println("Correcto");
         } else {
             System.out.println("Incorrecto");

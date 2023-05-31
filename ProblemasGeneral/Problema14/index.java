@@ -33,15 +33,15 @@ public class index {
 
         switch (cambio) {
             case "libras":
-                conversion = cantidad/0.86;
+                conversion = cantidad*0.86;
                 System.out.println("Equivalen a " + conversion+" libras");
                 break;
             case "dolares":
-                conversion = cantidad/1.28611;
+                conversion = cantidad*1.28611;
                 System.out.println("Equivalen a " + conversion+" U$D");
                 break;
             case "yenes":
-                conversion = cantidad/129.852;
+                conversion = cantidad*129.852;
                 System.out.println("Equivalen a " + conversion+" yenes");
                 break;
             default:
