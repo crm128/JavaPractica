@@ -21,14 +21,14 @@ del programa, caso contrario se vuelve a mostrar el menú. */
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese un primer numero");
-        int a = leer.nextInt();
+        //int a = leer.nextInt();
         System.out.println("Ingrese un segundo numero");
-        int b = leer.nextInt();
+        //int b = leer.nextInt();
+        int a = 5;
+        int b = 6;
         boolean salir = true;
-
-        while (salir) {
-            //System.out.print("\033[H\033[2J");  
-            //System.out.flush(); 
+        int c;
+        do{
             System.out.println("Menu");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
@@ -36,7 +36,7 @@ del programa, caso contrario se vuelve a mostrar el menú. */
             System.out.println("4. Dividir");
             System.out.println("5. Salir");
             System.out.println("Ingrese ");
-            int c = leer.nextInt();
+            c = leer.nextInt();
             switch (c) {
                 case 1:
                     System.out.println("El resultado es: " + Operaciones.suma(a, b));
@@ -53,17 +53,22 @@ del programa, caso contrario se vuelve a mostrar el menú. */
                     break;
                 case 5:
                     System.out.println("Confirme que quiere salir S/N");
-                    leer.next();
+                    //leer.next();
                     char confirmar = leer.next().charAt(0);
-                    if ( confirmar == 'S'){
+                    if ( confirmar == 'S' || confirmar == 's'){
                         salir = false;
                     }
                     break;
                 default:
                     salir = false;
+                    break;
             }
             System.out.println("");
-        }
+
+
+        }while (salir);
+
+        System.out.println("Al fin");
         leer.close();
     }
 }
