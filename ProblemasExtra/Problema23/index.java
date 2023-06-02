@@ -2,6 +2,7 @@ package ProblemasExtra.Problema23;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 /*Construya un programa que lea 5 palabras de mínimo 3 y hasta 5 caracteres y, a 
@@ -22,12 +23,23 @@ public class index {
         palabra.add("exit");
 
         Collections.shuffle(palabra);
+
         /* 
         System.out.println("Haciendo uso de ForEach");
         palabra.forEach(name->{ 
             System.out.println(name);
         });
         */
+
+        HashSet<Integer> aleatorioVertical = new HashSet<Integer>();
+        HashSet<Integer> aleatorioHorizontal = new HashSet<Integer>();
+        do {
+            aleatorioHorizontal.add((int) (Math.random()*15));
+            aleatorioVertical.add((int) (Math.random()*21));
+        } while (aleatorioHorizontal.size()<5 && aleatorioVertical.size()<5);
+
+        
+
         String[][] matriz = new String[20][20];
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
